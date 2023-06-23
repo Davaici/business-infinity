@@ -1,0 +1,35 @@
+.optinBox
+{
+    //* Block
+    // Position
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+
+    // Decoration
+    box-shadow: $box-shadow;
+    border-radius: $radius;
+
+    //* Elements
+    &__form
+    {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 20px;
+
+        //* Media queries
+        @media all and (max-width: $breakpoint-tablet)
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__button
+    {
+        width: auto;
+    }
+}

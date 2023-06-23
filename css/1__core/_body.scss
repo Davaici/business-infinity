@@ -1,0 +1,57 @@
+//* BODY & HTML
+body
+{
+    //* Block
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // padding-bottom: 50px;
+
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: $color-grey800;
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-mobile)
+    {
+        font-size: 18px;
+    }
+
+    @media all and (max-width: $breakpoint-smallmobile)
+    {
+        font-size: 16px;
+    }
+}
+
+//* MAIN
+.main
+{
+    //* Block
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+    width: $width-page-normal;
+    margin: 50px auto;
+
+    //* Elements
+    &__page
+    {
+        margin: auto;
+    }
+
+    //* Modifiers
+    &--large
+    {
+        width: $width-page-large;
+    }
+
+    &--normal
+    {
+        width: $width-page-normal;
+    }
+
+    &--small
+    {
+        width: $width-page-small;
+    }
+}

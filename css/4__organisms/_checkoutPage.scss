@@ -1,0 +1,86 @@
+.checkoutPage
+{
+    //* Block
+    width: $width-page-large;
+    max-width: 100%;
+    padding: 40px;
+    border-radius: $radius;
+
+    display: flex;
+    gap: 100px;
+    justify-content: stretch;
+    align-items: stretch;
+
+    box-shadow: $box-shadow;
+
+    //* Elements
+    & > *
+    {
+        min-width: 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    &__left
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__right
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @media all and (max-width: $breakpoint-laptop)
+        {
+            padding-bottom: 50px;
+
+            border-bottom: 2px solid $color-grey200;
+        }
+    }
+
+    &__section
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__form
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__secureBanner
+    {
+        margin: auto;
+        width: 550px;
+        max-width: 70%;
+    }
+
+    &__courseImage
+    {
+        height: 300px;
+        width: 100%;
+
+        background-color: $color-grey900;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-laptop)
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    @media all and (max-width: $breakpoint-tablet)
+    {
+        padding: 40px 10px;
+    }
+}

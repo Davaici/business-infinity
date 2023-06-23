@@ -1,0 +1,37 @@
+.textInput
+{
+    //* Block
+    display: block;
+
+    // Position
+    min-height: 60px;
+    padding: 0 20px;
+
+    // Decoration
+    font-family: inherit;
+    border: 1px solid $color-grey300;
+    color: $color-grey800;
+    border-radius: $radius;
+
+    &::placeholder
+    {
+        color: $color-grey300;
+    }
+
+    &:focus
+    {
+        outline: none;
+        border-color: $color-blue800;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-mobile)
+    {
+        min-height: 50px;
+    }
+
+    @media all and (max-width: $breakpoint-smallmobile)
+    {
+        min-height: 45px;
+    }
+}

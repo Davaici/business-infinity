@@ -1,0 +1,34 @@
+.connexionPage
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: $width-page-small;
+    max-width: 100%;
+
+    box-shadow: $box-shadow;
+    border-radius: $radius;
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-tablet)
+    {
+        padding: 40px 10px;
+    }
+
+    @media all and (max-width: $breakpoint-mobile)
+    {
+        gap: 20px;
+    }
+
+    //* Elements
+    &__title + *
+    {
+        margin-top: 40px;
+        
+        @media all and (max-width: $breakpoint-mobile)
+        {
+            margin-top: 20px;
+        }
+    }
+}

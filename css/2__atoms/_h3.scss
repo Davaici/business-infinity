@@ -1,0 +1,30 @@
+//^ Attention - ce n'est que du style (h1 = plus gros, h2 = plus petit) et pas une structure HTML (on va assigner des style h2 à des <h1> pour qu'ils ne soient pas immenses)
+.h3
+{
+    //* Block
+    // overflow: hidden;
+
+    font-family: "PT Sans", "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 35.54px;
+    line-height: 1;
+    text-align: left;
+    color: $color-grey900;
+
+    //* Modifiers
+    &--center
+    {
+        text-align: center;
+    }
+
+    //* Media queries
+    @media all and (max-width: $breakpoint-laptop)
+    {
+        font-size: 30.54px;
+    }
+
+    @media all and (max-width: $breakpoint-tablet)
+    {
+        font-size: 25.54px;
+    }
+}

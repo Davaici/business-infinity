@@ -1,0 +1,42 @@
+.courses
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    //* Elements
+    &__collection
+    {
+        // width: $width-page-large;
+        max-width: 100%;
+        padding: 60px 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        box-shadow: $box-shadow;
+        border-radius: $radius;
+
+        @media all and (max-width: $breakpoint-tablet)
+        {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        //* Modifiers
+        &--noShadow
+        {
+            box-shadow: none;
+            padding: 0;
+        }
+    }
+
+    &__cards
+    {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        flex-wrap: wrap;
+    }
+}

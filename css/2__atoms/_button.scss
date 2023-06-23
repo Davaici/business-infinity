@@ -1,0 +1,82 @@
+.button
+{
+    //* Block
+    // Position
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 15px;
+
+    // Decoration
+    text-align: center;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-grey900;
+    border: 3px solid $color-grey900;
+    border-radius: $radius;
+    font-family: inherit;
+    cursor: pointer;
+
+    // Animation
+    transition-property: background-color color;
+    transition-duration: 500ms;
+    &:hover
+    {
+        background-color: $color-white;
+        color: $color-grey900;
+    }
+
+    //* Modifiers
+    &--cta
+    {
+        min-height: 60px;
+        padding: 0 40px;
+
+        background-color: $color-primary500;
+        border-color: $color-primary500;
+
+        &:hover
+        {
+            color: $color-primary500;
+        }
+
+        // Media queries
+        @media all and (max-width: $breakpoint-mobile)
+        {
+            min-height: 50px;
+        }
+    
+        @media all and (max-width: $breakpoint-smallmobile)
+        {
+            min-height: 45px;
+        }
+    }
+
+    &--stretch
+    {
+        width: auto;
+    }
+
+    &--primary
+    {
+        background-color: $color-primary500;
+        border-color: $color-primary500;
+
+        &:hover
+        {
+            color: $color-primary500;
+        }
+    }
+
+    &--blue
+    {
+        background-color: $color-blue800;
+        border-color: $color-blue800;
+
+        &:hover
+        {
+            color: $color-blue800;
+        }
+    }
+}

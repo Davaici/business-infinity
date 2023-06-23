@@ -1,0 +1,22 @@
+.videoList
+{
+    display: block;
+
+    //* Elements
+    &__item
+    {
+        display: block;
+        padding: 15px 30px;
+
+        &:hover
+        {
+            background-color: $color-grey200;
+        }
+
+        //* Modifiers
+        &--current
+        {
+            background-color: $color-grey200;
+        }
+    }
+}

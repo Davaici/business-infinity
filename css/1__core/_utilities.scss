@@ -1,0 +1,34 @@
+strong, .bold
+{
+    font-weight: bold !important;
+}
+
+em, i, .italic
+{
+    font-style: italic !important;
+}
+
+.underline
+{
+    text-decoration: underline !important;
+}
+
+.center
+{
+    text-align: center !important;
+}
+
+.red
+{
+    color: $color-red500 !important;
+}
+
+.green
+{
+    color: $color-green800 !important;
+}
+
+.linethrough
+{
+    text-decoration: line-through;
+}
